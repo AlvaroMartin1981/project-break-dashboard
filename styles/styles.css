@@ -48,15 +48,35 @@ a {
     text-decoration: none;
     cursor: pointer;
 	color: black;
+	font-size: 13px;
 }
 .containerHeaderClock{
 	display: flex;
 	justify-content: left;
 	align-items: center;
+	padding: 50px
 }
-.containerPageClock{
-    
+.containerMainClock{
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 30px 30px 150px 30px;
+    padding: 35px;
+	gap: 50px;
+}
+.firstMessage, .message {
+	font-size: 55px;
+}
+.clock {
+	font-size: 100px;
+}
+.date {
+	font-size: 65px;
 }
 .containerFooterClock{
-	
+	display: flex;
+    justify-content: end;
+    gap: 70px;
+    margin-right: 70px;
 }
