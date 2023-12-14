@@ -6,7 +6,7 @@ function upDateClock () {
     const day = today.getDate();
     const month = today.getMonth() + 1 ;
     const year = today.getFullYear();
-    console.log(today)
+   
 
     const formattedHours = hours < 10 ? '0' + hours : hours;
     const formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
@@ -15,7 +15,7 @@ function upDateClock () {
 
     const formattedDates = `${day}/${month}/${year}`;
     const formattedClock = `${formattedHours}:${formattedMinutes}:${formattedSeconds}`
-    document.querySelector('.date').textContent= formattedDates;
+    document.querySelector('.date').innerHTML= formattedDates;
     document.querySelector('.clock').textContent= formattedClock;
     
     let firstMessage = '';
@@ -50,3 +50,7 @@ function upDateClock () {
 setInterval(upDateClock, 1000);
 
 upDateClock ()
+
+
+
+

@@ -43,12 +43,21 @@ table {
 }
 
 /**/
-
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background-size: cover;
+	transition: background 1s ease-in-out;
+	
+	
+}
 a {
     text-decoration: none;
     cursor: pointer;
-	color: black;
 	font-size: 13px;
+	filter: invert(1);
+
 }
 .containerHeaderClock{
 	display: flex;
@@ -64,19 +73,45 @@ a {
 	margin: 30px 30px 150px 30px;
     padding: 35px;
 	gap: 50px;
+	color: white;
 }
 .firstMessage, .message {
 	font-size: 55px;
+	 
 }
 .clock {
 	font-size: 100px;
+	
 }
 .date {
 	font-size: 65px;
+	
 }
-.containerFooterClock{
+.containerFooter{
 	display: flex;
     justify-content: end;
     gap: 70px;
-    margin-right: 70px;
+    border-bottom: 2px solid white;
+    width: 75%;
+    padding-bottom: 6px;
+}
+.containerMainPass{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	filter: invert(1);	
+}
+.footer {
+	
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    width: 70%;
+    right: 50px;
+    bottom: 50px;
+}
+.pass, .passForm, .showPass {
+	padding: 25px
 }
