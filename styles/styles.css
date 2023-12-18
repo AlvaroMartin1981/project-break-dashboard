@@ -143,7 +143,67 @@ a {
 	border-radius: 20px;
 	height: 45px;
 	font-size: 15px;
+	background-color: rgb(57, 57, 225);
 }
 .showPass, .passNumber{
 	font-size: 19px;
+}
+.containerMainLink{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 400px;
+	margin-left: 730px;
+	flex-wrap: wrap;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.containerTitleLink {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	width: 100%;
+	filter: invert(1);
+	font-size: 32px;
+	margin-bottom: 25px;
+}
+.containerInputLink {
+	display: flex;
+	flex-direction: column; 
+	justify-content: center;
+	align-items: center;
+
+}
+#nameInput{
+	width: 95%;
+	border-radius: 5px;
+	padding: 8px;
+	margin-bottom: 10px;
+	
+}
+ #urlInput{
+	width: 95%;
+	border-radius: 5px;
+	padding: 8px;
+	margin-bottom: 10px;
+	
+ } 
+ #addLInkButton{
+	width: 100%;
+	border-radius: 5px;
+	padding: 8px;
+	margin-bottom: 10px;
+	background-color: rgb(57, 57, 225);
+	color: white;
+	font-size: 17px;
+
+}
+.linkList{
+	display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    height: 400px;
+   	overflow: scroll;
 }
