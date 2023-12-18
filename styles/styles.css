@@ -112,6 +112,38 @@ a {
     right: 50px;
     bottom: 50px;
 }
-.pass, .passForm, .showPass {
+.pass, .passForm, .formPass {
 	padding: 25px
+}
+.pass{
+	display: flex;
+	gap: 15px;
+	align-items: center;
+	font-size: 45px;
+}
+.passForm{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 25px;
+}
+.labelPass {
+	font-size: 25px;
+}
+.formPass {
+	filter: invert(1);
+}
+.inputPass {
+	border-radius: 20px;
+	height: 35px;
+	font-size: 15px;
+}
+.buttonPass{
+	border-radius: 20px;
+	height: 45px;
+	font-size: 15px;
+}
+.showPass, .passNumber{
+	font-size: 19px;
 }
