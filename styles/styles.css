@@ -207,3 +207,21 @@ a {
     height: 400px;
    	overflow: scroll;
 }
+.cityWeather, .cityConditions, .containerMainWeather{
+	color: white;
+}
+.containerMainWeather{
+	display: flex;
+	flex-direction: column;
+	margin-left: 800px;
+	
+}
+.hourlyData, .cityWeather, .cityConditions, .cityTemp{
+	margin: 25px 25px 25px 25px;
+}
+.hourlyData{
+	display: flex;
+	width: 300px;
+	overflow: scroll;
+	margin-top: 25px;
+}
