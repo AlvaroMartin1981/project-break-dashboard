@@ -14,7 +14,7 @@ const apiData = async () => {
         }
 
         const data = await res.json();
-        console.log(data)
+       
 
         const { name, country } = data.location;
         const showData = `${name} / ${country}`;
@@ -22,7 +22,7 @@ const apiData = async () => {
         const showCondition = `<span>${text}</span> <img src="${icon}" alt="icon weather">`;
         const { humidity, wind_kph, precip_in, temp_c } = data.current;
         const showTemp = `
-            <div><span style="font-size: 35px;">${temp_c}</span> <img src="../images/celsius.png" style="filter: invert(1)" height="30px" width="30px"alt="icon Centigrados"></div>
+            <div><span style="font-size: 35px;">${temp_c}</span> <img src="./celsius.png" style="filter: invert(1)" height="30px" width="30px"alt="icon Centigrados"></div>
             <div><div>Humedad: ${humidity}</div>
                 <div>Viento: ${wind_kph} km/h</div>
                 <div>Precipitación: ${precip_in} mm</div>
@@ -52,7 +52,7 @@ const apiData = async () => {
             showDayWeather += `<div>
                         <div><span>${hour.time}</span></div>
                         <div><img src="${hour.icon}"></div>
-                        <div><span style="font-size: 24px;">${hour.temp_c}</span> <img src="../images/celsius.png" style="filter: invert(1)" color="white" height="30px" width="30px" alt="icon Centigrados"></div>
+                        <div><span style="font-size: 24px;">${hour.temp_c}</span> <img src="./celsius.png" style="filter: invert(1)" color="white" height="30px" width="30px" alt="icon Centigrados"></div>
                       </div>`;
         });
 

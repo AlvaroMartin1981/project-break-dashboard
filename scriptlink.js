@@ -2,7 +2,7 @@ const nameInput = document.getElementById('nameInput');
 const urlInput = document.getElementById('urlInput');
 const addLinkButton = document.getElementById('addLInkButton');
 const linkList = document.getElementById('linkList');
-
+const listItem = document.querySelector('.deleteLinkButton');
 const localLinks = JSON.parse(localStorage.getItem('links')) || [];
 
 function showLinks() {
@@ -14,7 +14,7 @@ function showLinks() {
             <button class="deleteLinkButton">x</button>
         `;
 
-        listItem.querySelector('.deleteLinkButton').addEventListener('click', () => {
+        listItem.addEventListener('click', () => {
             const index = localLinks.indexOf(link);
             deleteLink(index);
         });
