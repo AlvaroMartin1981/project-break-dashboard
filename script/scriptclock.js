@@ -44,7 +44,7 @@ function upDateClock () {
     message = 'Buenas noches, es hora de pensar en parar y descansar.';
     }
    
-    document.querySelector('.message').textContent = message;
+    message = document.querySelector('.message').textContent;
 }    
 
 setInterval(upDateClock, 1000);
