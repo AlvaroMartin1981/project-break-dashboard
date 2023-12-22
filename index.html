@@ -7,16 +7,77 @@
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-    <div>
-        <footer class="footer">
+    <main class="containerMainIndex">
+        <div class="mainLeft">
+            <div class="containerLink">    
+                <div class="containerMainLink">
+                    <div class="containerTitleLink">
+                        <h2>Añade tu enlace de interes:</h2>
+                        <img src="../images/enlace.png" alt="imagen enlace de interes" height="30px" width="30px">
+                    </div>
+                    
+                    <div class="containerInputLink">
+                        <input type="text" id="nameInput" placeholder="Nombre de tu enlace" required>
+                        <input type="text" id="urlInput" required placeholder="Pega aqui tu URL">
+                        <button id="addLInkButton" class="addLInkButton">Añadir enlace</button>
+                    </div>
+                    <div>
+                    <ul id="linkList" class="linkList"></ul>
+                    </div> 
+                </div>    
+            </div>
+        </div>
+        <div class="mainRight">
+            <div class="mainRightTop">
+                <div class="containerWeather">    
+                    <div class="containerMainWeather">
+                        <div class="cityWeather" id="cityWeather"></div>
+                        <div class="city">
+                            <div class="cityConditions" id="cityConditions"></div>
+                            <div class="cityTemp" id="cityTemp"></div>
+                        </div>  
+                        <div class="hourlyData" id="hourlyData"></div>  
+                    </div>   
+                </div>  
+                <div class="containerClock">    
+                    <div class="containerMainClock">
+                        <div><p class="firstMessage"></p></div>
+                        <div class="clock"></div>
+                        <div class="date"></div>
+                        <div><p class="message"></p></div>
+                    </div>
+                </div>
+            </div>    
+            <div class="containerPass">    
+                <div class="containerMainPass">
+                    <div class="pass">
+                        <h2>Crea tu contraseña segura</h2><img src="../images/candado.png" alt="Contraseñas" height="30px" width="30px">
+                    </div>
+                    <div class="passForm">
+                        <label for="length" class="labelPass">Numero de caracteres de la contraseña</label>
+                        <div class="formPass">    
+                            <input type="number" id="length" name="length" min="12" max="50" value="12" class="inputPass">
+                            <button type="button" onclick="generatePassword()" class="buttonPass">Generar contraseña</button>
+                        </div>    
+                    </div>
+                    <div class="showPass">Contraseña generada:
+                        <span id="passNumber"></span>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>      
+    </main>
+    <footer class="footer">
                     <div class="containerFooter">
                         <nav><a href="./index/indexclock.html"><img src="../images/reloj.png" alt="Simbolo Reloj" height="30px" width="30px"></a></nav>
                         <nav><a href="./index/indexpassword.html"><img src="../images/candado.png" alt="Contraseñas" height="30px" width="30px"></a></nav>
                         <nav><a href="./index/indexlink.html"><img src="../images/enlace.png" alt="Enlaces interes" height="30px" width="30px"></a></nav>
                         <nav><a href="./index/indexweather.html"><img src="../images/clima.png" alt="Tiempo" height="30px" width="30px"></a></nav>
                     </div>
-        </footer>
-    </div>
+    </footer>
+
 <script src="./script/script.js"></script>    
 <script src="./script/scriptclock.js"></script>  
 <script src="./script/scriptlink.js"></script>  
